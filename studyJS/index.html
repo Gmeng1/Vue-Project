@@ -23,14 +23,13 @@ let n1 = new single(1)
 let n2 = new single(2)
 console.log(n1.data)
 console.log(n2.data);
-
+console.log(this)
 
 var number = 50
 var obj = {
   number:60,
   getNum:function(){
     var number = 70
-    console.log(this)
     return this.number
   }
 }
